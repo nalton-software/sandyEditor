@@ -1,0 +1,103 @@
+/* I know these buttons look huge, but open output in new tab and it's fine*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+td {
+  padding: 5px;
+}
+
+select {
+  font-size: 14pt;
+}
+
+a {
+  margin: 5px;
+  font-size: 15pt;
+  font-family: Roboto;
+}
+
+#titleText {
+  margin: 5px;
+  font-family: Roboto;
+}
+
+#menuDiv {
+  margin: 5px;
+  font-size: 16px;
+}
+
+#menuDiv button {
+  padding: 3px;
+  display: inline-block;
+  border: none;
+  font-size: 16pt;
+  background-color: #DDDDDD;
+}
+
+#menuDiv button:active {
+  background-color: #D2D2D2
+}
+
+#menuDiv input {
+  margin-top: 5px;
+}
+
+#menuDiv label {
+  font-size: 16pt;
+}
+
+#loadMenuDiv {
+  border: 2px solid black;
+  margin-left: 10px;
+  padding: 14px 5px 8px 5px;
+}
+
+#runButton {
+  margin-left: 30px;
+}
+
+#resultBox {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#editorSettings {
+  font-size: 16pt;
+}
+
+#projectName {
+  padding: 5px;
+}
+
+#mainTable {
+  width: 100%; 
+}
+
+#mainTable td {
+  height: 70vh; /* 70% of device height*/
+  vertical-align: top;
+  border: 1px solid black;
+}
+
+#inputBox {
+  height: 100%; 
+  width: 100%;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  resize: none;
+}

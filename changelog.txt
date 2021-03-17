@@ -1,0 +1,60 @@
+# 25/02/2020 v1.0.0
+  added ROBOTO font
+  added unsaved work marker thing
+  ctrl+s to save
+  ctrl+shift+s to save as
+  non character keys(ctrl,alt,ect.) do not make projectnotsaved
+  spell check turned off
+
+# 26/02/2020 v1.0.1
+  html should be in seperate (iframe)
+  save and save as shortcut everywhere
+  ctrl + e (ctrl + n can't prevent default) for new project
+  auto-pairing of brackets doesn't happen if next char is number or alpha
+  auto update turns off if there is script in project
+  moved functions into 2 files
+  changed update to run because of js support that arrived with iframe (I have left functions for finding scripts in there anyway)
+  stopped autorun from happening when there is script
+  made second part of bracket pair delete when first is deleted
+  reformatted load button and dropdown
+  set roboto to only the title so that it doesn't affect the result
+  changed font in input
+  fixed thing where name would say that it was unsaved when it was saved - the updateName call was after the projectIsSaved was set to true
+  stopped inputbox from expanding
+
+  --Later
+  changed title
+  added hover title shortcut keys to buttons
+  added shortcut for delete
+  check to see if project exists before making new project
+  when delete current project goes to prev project instead of unnamed (or if none then unnamed)
+  check to see if there are any projects before bring up confirm box
+  added punctuation to some messages
+  changed starting text
+  ctrl + i = insanity (sorry i had to)
+
+# 27/02/2020 v1.0.2
+  added icon thing
+
+# 28/02/2020 v1.0.3
+  fixed delete confirm text
+  made favicon work (Also, what is our favicon a picture of? Please tell)
+  indent can be 2 or 4 spaces using dropdown
+  made allInOne.html so that you can paste it into itself
+  now indents to previous line indent
+  added smartLog() - makes it obvious what is being logged, especially if it contains lots of spaces
+  attempted to make it increase indent on <script>, function() { etc - failed because end tag gets indented annoyingly and also indents stuff AFTER end tags (such as </script>)
+  added ctrl + [ decrease indent EXTREMELY BUGGY
+
+# 2/03/2020 v1.0.4
+  fixed decrease indent
+  ctrl + ] increase indent
+
+  (plans)
+  increase indent on <element> and function idk() {
+  add better start menu
+  possibly bind load to enter if the dropdown has focus
+  
+  (far future plans)
+  syntax hylighting (probably need to seperate all the text into different tokens :)
+  intelligisense (probably impossible)

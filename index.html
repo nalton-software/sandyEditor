@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sandy Editor</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="favicon.png">
+
+    <script src="smallFunctions.js" defer></script>
+    <script src="mainFunctions.js" defer></script>
+  </head>
+
+  <body>
+    <h1 id="titleText">Sandy Editor</h1>
+    <a href="/homepage">Back to homepage</a>
+    <br>
+    <br>
+
+    <div id="menuDiv">
+      <button onclick="prepareForNewProject()" title="ctrl + e">New</button>
+
+      <button onclick="saveProject()" title="ctrl + s">Save</button>
+
+      <button onclick="saveProjectAs()" title="ctrl + shift + s">Save as</button>
+
+      <button onclick="deleteProject()" title="ctrl + BACKSPACE">Delete</button>
+
+      <div id="loadMenuDiv" style="display: inline">
+        <button onclick="loadProjectUser()">Load</button>
+        <select id="loadSelect">
+        </select>
+      </div>
+
+      <button onclick="runProject()" id="runButton">Run</button>
+
+      <input type="checkbox" id="autoRunCheckbox" name="autoRunCheckbox" checked>
+
+      <label for="autoRunCheckbox">Auto Run</label>
+      <!-- auto save for the future -->
+    </div>
+
+    <table id="editorSettings"><!-- done as a table to keep next to each other-->
+      <tr>
+        <td>
+          <p id="projectName">Editing: unnamed project</p>
+        </td>
+        <td>
+          <label for="indentAmountSelect">Indent Amount</label>
+          <select id="indentAmountSelect">
+            <option value="2">2 spaces</option>
+            <option value="4">4 spaces</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <table id="mainTable">
+      <tr>
+        <td>
+          <textarea id="inputBox" spellcheck="false">some words now</textarea>
+        </td>
+
+        <td>
+          <iframe id="resultBox">
+          </iframe>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
